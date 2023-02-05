@@ -1,4 +1,6 @@
-FROM balenalib/raspberry-pi-debian:buster-build as sx1302-hal-builder
+ARG BUILD_BOARD
+
+FROM balenalib/"$BUILD_BOARD"-debian:bullseye-build AS sx1302-hal-builder
 
 ENV ROOT_DIR=/opt
 ENV OUTPUT_DIR=/opt/output
