@@ -1,4 +1,4 @@
-ARG BUILD_BOARD
+ARG BUILD_BOARD=raspberrypi4-64
 
 FROM balenalib/"$BUILD_BOARD"-debian:bullseye-build AS sx1302-hal-builder
 
